@@ -73,8 +73,7 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 - None
 
 ## Wireframes
-<img src="wireframe.jpeg" width=600>
-
+![Wireframe](wireframe.jpeg)
 ## Schema 
 
 [This section will be completed in Unit 9]
