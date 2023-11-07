@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD52DCC82AFA0DCF00DA2BDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD52DCC72AFA0DCF00DA2BDE /* README.md */; };
+		DD52DCCA2AFA0DD400DA2BDE /* wireframe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD52DCC92AFA0DD400DA2BDE /* wireframe.jpeg */; };
+		DD52DCCC2AFA0DD800DA2BDE /* brainstorm.md in Resources */ = {isa = PBXBuildFile; fileRef = DD52DCCB2AFA0DD800DA2BDE /* brainstorm.md */; };
 		DD9854B12AF96803005A3616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9854B02AF96803005A3616 /* AppDelegate.swift */; };
 		DD9854B32AF96803005A3616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9854B22AF96803005A3616 /* SceneDelegate.swift */; };
 		DD9854B82AF96803005A3616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9854B62AF96803005A3616 /* Main.storyboard */; };
@@ -16,13 +19,13 @@
 		DDBB8D412AF993880078302B /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D402AF993880078302B /* FeedData.swift */; };
 		DDBB8D452AF9FF760078302B /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D442AF9FF760078302B /* JokeViewController.swift */; };
 		DDBB8D472AF9FF800078302B /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D462AF9FF800078302B /* QuoteViewController.swift */; };
-		DDBB8D492AFA0A4F0078302B /* brainstorm.md in Resources */ = {isa = PBXBuildFile; fileRef = DDBB8D482AFA0A4F0078302B /* brainstorm.md */; };
-		DDBB8D4B2AFA0A6A0078302B /* wireframe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DDBB8D4A2AFA0A6A0078302B /* wireframe.jpeg */; };
-		DDBB8D4D2AFA0A700078302B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDBB8D4C2AFA0A700078302B /* README.md */; };
 		DDFE0DF52AF9907B00A65B7C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE0DF42AF9907B00A65B7C /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD52DCC72AFA0DCF00DA2BDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		DD52DCC92AFA0DD400DA2BDE /* wireframe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wireframe.jpeg; sourceTree = SOURCE_ROOT; };
+		DD52DCCB2AFA0DD800DA2BDE /* brainstorm.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = brainstorm.md; sourceTree = SOURCE_ROOT; };
 		DD9854AD2AF96803005A3616 /* FactFlict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactFlict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9854B02AF96803005A3616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9854B22AF96803005A3616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,9 +37,6 @@
 		DDBB8D402AF993880078302B /* FeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
 		DDBB8D442AF9FF760078302B /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		DDBB8D462AF9FF800078302B /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
-		DDBB8D482AFA0A4F0078302B /* brainstorm.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = brainstorm.md; sourceTree = "<group>"; };
-		DDBB8D4A2AFA0A6A0078302B /* wireframe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wireframe.jpeg; sourceTree = "<group>"; };
-		DDBB8D4C2AFA0A700078302B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DDFE0DF42AF9907B00A65B7C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +81,9 @@
 				DD9854B92AF96804005A3616 /* Assets.xcassets */,
 				DD9854BB2AF96804005A3616 /* LaunchScreen.storyboard */,
 				DD9854BE2AF96804005A3616 /* Info.plist */,
-				DDBB8D482AFA0A4F0078302B /* brainstorm.md */,
-				DDBB8D4A2AFA0A6A0078302B /* wireframe.jpeg */,
-				DDBB8D4C2AFA0A700078302B /* README.md */,
+				DD52DCCB2AFA0DD800DA2BDE /* brainstorm.md */,
+				DD52DCC72AFA0DCF00DA2BDE /* README.md */,
+				DD52DCC92AFA0DD400DA2BDE /* wireframe.jpeg */,
 			);
 			path = FactFlict;
 			sourceTree = "<group>";
@@ -146,12 +146,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBB8D4D2AFA0A700078302B /* README.md in Resources */,
-				DDBB8D4B2AFA0A6A0078302B /* wireframe.jpeg in Resources */,
+				DD52DCCA2AFA0DD400DA2BDE /* wireframe.jpeg in Resources */,
 				DD9854BD2AF96804005A3616 /* LaunchScreen.storyboard in Resources */,
-				DDBB8D492AFA0A4F0078302B /* brainstorm.md in Resources */,
 				DD9854BA2AF96804005A3616 /* Assets.xcassets in Resources */,
+				DD52DCC82AFA0DCF00DA2BDE /* README.md in Resources */,
 				DD9854B82AF96803005A3616 /* Main.storyboard in Resources */,
+				DD52DCCC2AFA0DD800DA2BDE /* brainstorm.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

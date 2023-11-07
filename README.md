@@ -48,15 +48,15 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 - [ ] Random Fact Screen
 * A random fact is automatically generated upon opening the app
-* User is able to click a button to generate a new random fact
+* User is able to swipe up to generate a new random fact
 * A favorite button is shown on the screen to bookmark
 - [ ] Random Quote Screen
 * A random quote is automatically generated upon opening the app
-* User is able to click a button to generate a new random quote
+* User is able to swipe up to generate a new random quote
 * A favorite button is shown on the screen to bookmark
 - [ ] Random Joke Screen
 * A random joke is automatically generated upon opening the app
-* User is able to click a button to generate a new random joke
+* User is able to swipe up to generate a new random joke
 * A favorite button is shown on the screen to bookmark
 
 ### 3. Navigation
@@ -78,12 +78,32 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 [This section will be completed in Unit 9]
 
-### Models
 
-[Add table of models]
 
 ### Networking
 
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+- Will be using the 3 different APIs for each topic
+- User will be able to have some customization of the API requests
+
+
+### Progress For Week 8
+
+- Added wireframe
+- Found suitable APIs 
+- Create basic UI layout, still missing the dropdown menus for API request customization
+- Add background color to distinguish different views and set a mood for each topic
+
+### Week 8 demo video
+
+<div>
+    <a href="https://www.loom.com/share/c3233865f6f646368b6442fc14eb90d2">
+    </a>
+    <a href="https://www.loom.com/share/c3233865f6f646368b6442fc14eb90d2">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/c3233865f6f646368b6442fc14eb90d2-with-play.gif">
+    </a>
+  </div>
+
