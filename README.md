@@ -1,5 +1,5 @@
-Original App Design Project - README Template
-===
+[//]: # (Original App Design Project - README Template
+[comment]: # ===)
 
 # FactFlict
 
@@ -18,7 +18,7 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 ### App Evaluation
 
-[Evaluation of your app across the following attributes]
+[//]: #  ([Evaluation of your app across the following attributes])
 - **Category:** Education / Entertainment
 - **Mobile:** Mobile only
 - **Story:** An app that contains 3 main pages, a random quote, joke, or fact generator
@@ -32,7 +32,7 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+[//]: # ([fill in your required user stories here])
 * 4 tabs in the bottom of the screen sginifying different parts/views of the app (including favorites)
 * Different bakcgrounds for each view
 * Ability to save favorites
@@ -82,9 +82,9 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+[comment]: #  - [Add list of network requests by screen ]
+[comment]: #  - [Create basic snippets for each Parse network request]
+[comment]: #  - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 - Will be using the 3 different APIs for each topic
 - User will be able to have some customization of the API requests

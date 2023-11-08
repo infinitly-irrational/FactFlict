@@ -1,13 +1,21 @@
 import Foundation
 
-struct Jokes: Codable {
-    
+struct JokeResponse: Codable {
+    let jokes: [Joke]
 }
 
-struct Facts: Codable {
-    
+struct Joke: Codable {
+    let joke: String
 }
 
-struct Quotes: Codable {
-    
+
+struct Quote: Codable {
+    let content: String
+    let author: String
 }
+
+
+struct Fact: Codable {
+    let fact: String
+}
+

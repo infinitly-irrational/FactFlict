@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2D32772AFB5BDA006546CE /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D32762AFB5BDA006546CE /* FavoritesCell.swift */; };
+		DD2D327D2AFB61D8006546CE /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D327C2AFB61D8006546CE /* FavoritesTableViewController.swift */; };
 		DD52DCC82AFA0DCF00DA2BDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD52DCC72AFA0DCF00DA2BDE /* README.md */; };
 		DD52DCCA2AFA0DD400DA2BDE /* wireframe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DD52DCC92AFA0DD400DA2BDE /* wireframe.jpeg */; };
 		DD52DCCC2AFA0DD800DA2BDE /* brainstorm.md in Resources */ = {isa = PBXBuildFile; fileRef = DD52DCCB2AFA0DD800DA2BDE /* brainstorm.md */; };
@@ -19,10 +21,12 @@
 		DDBB8D412AF993880078302B /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D402AF993880078302B /* FeedData.swift */; };
 		DDBB8D452AF9FF760078302B /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D442AF9FF760078302B /* JokeViewController.swift */; };
 		DDBB8D472AF9FF800078302B /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D462AF9FF800078302B /* QuoteViewController.swift */; };
-		DDFE0DF52AF9907B00A65B7C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE0DF42AF9907B00A65B7C /* FavoritesViewController.swift */; };
+		DDFA603A2AFB6CF50081653F /* DetailedFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA60392AFB6CF50081653F /* DetailedFavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2D32762AFB5BDA006546CE /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		DD2D327C2AFB61D8006546CE /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesTableViewController.swift; path = "../../../Library/Mobile Documents/.Trash/FavoritesTableViewController.swift"; sourceTree = "<group>"; };
 		DD52DCC72AFA0DCF00DA2BDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		DD52DCC92AFA0DD400DA2BDE /* wireframe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wireframe.jpeg; sourceTree = SOURCE_ROOT; };
 		DD52DCCB2AFA0DD800DA2BDE /* brainstorm.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = brainstorm.md; sourceTree = SOURCE_ROOT; };
@@ -37,7 +41,7 @@
 		DDBB8D402AF993880078302B /* FeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
 		DDBB8D442AF9FF760078302B /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		DDBB8D462AF9FF800078302B /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
-		DDFE0DF42AF9907B00A65B7C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		DDFA60392AFB6CF50081653F /* DetailedFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedFavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,9 @@
 				DDBB8D442AF9FF760078302B /* JokeViewController.swift */,
 				DDBB8D462AF9FF800078302B /* QuoteViewController.swift */,
 				DDBB8D402AF993880078302B /* FeedData.swift */,
-				DDFE0DF42AF9907B00A65B7C /* FavoritesViewController.swift */,
+				DD2D327C2AFB61D8006546CE /* FavoritesTableViewController.swift */,
+				DDFA60392AFB6CF50081653F /* DetailedFavoritesViewController.swift */,
+				DD2D32762AFB5BDA006546CE /* FavoritesCell.swift */,
 				DD9854B62AF96803005A3616 /* Main.storyboard */,
 				DD9854B92AF96804005A3616 /* Assets.xcassets */,
 				DD9854BB2AF96804005A3616 /* LaunchScreen.storyboard */,
@@ -163,11 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9854C52AF96897005A3616 /* FactViewController.swift in Sources */,
+				DD2D32772AFB5BDA006546CE /* FavoritesCell.swift in Sources */,
 				DDBB8D472AF9FF800078302B /* QuoteViewController.swift in Sources */,
+				DD2D327D2AFB61D8006546CE /* FavoritesTableViewController.swift in Sources */,
+				DDFA603A2AFB6CF50081653F /* DetailedFavoritesViewController.swift in Sources */,
 				DDBB8D452AF9FF760078302B /* JokeViewController.swift in Sources */,
 				DDBB8D412AF993880078302B /* FeedData.swift in Sources */,
 				DD9854B12AF96803005A3616 /* AppDelegate.swift in Sources */,
-				DDFE0DF52AF9907B00A65B7C /* FavoritesViewController.swift in Sources */,
 				DD9854B32AF96803005A3616 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
