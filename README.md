@@ -117,12 +117,12 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 - Added app icon
 
 
-### Week 9 demo vide
+### Week 9 demo video
 
 <div>
-    <a href="https://www.loom.com/share/5af16d1fc62749c184a145343a7291bd">
+    <a href="https://www.loom.com/share/a3162e2384ed4f708da4f1eecb664630">
     </a>
-    <a href="https://www.loom.com/share/5af16d1fc62749c184a145343a7291bd">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5af16d1fc62749c184a145343a7291bd-with-play.gif">
+    <a href="https://www.loom.com/share/a3162e2384ed4f708da4f1eecb664630">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/a3162e2384ed4f708da4f1eecb664630-with-play.gif">
     </a>
   </div>
