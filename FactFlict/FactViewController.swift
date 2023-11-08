@@ -5,10 +5,35 @@ class FactViewController: UIViewController {
     
     var facts:[Fact] = []
     let api_key = "b45RF732saJ+cHNSYApPJA==SpDC0gC3PMtcoiPQ"
+    var favoritesManager = FavoritesManager()
     
  
+    @IBOutlet weak var addToFavorites: UIButton!
     @IBOutlet weak var factLabel: UILabel!
-    @IBOutlet weak var FavoriteButton: UIButton!
+    
+    @IBAction func addToFavorites(_ sender: UIButton) {
+        
+        let currentFact = factLabel.text ?? ""
+        let isFavorite = favoritesManager.isFavorite(currentFact)
+
+        if isFavorite {
+            favoritesManager.removeFavorite(currentFact)
+            sender.isSelected = false
+            
+            let configuration = UIImage.SymbolConfiguration(scale: .large)
+            let unfilledBookmarkImage = UIImage(systemName: "bookmark", withConfiguration: configuration)
+            sender.setImage(unfilledBookmarkImage, for: .normal)
+        } else {
+            favoritesManager.addFavorite(currentFact)
+            sender.isSelected = true
+            
+            let configuration = UIImage.SymbolConfiguration(scale: .large)
+            let filledBookmarkImage = UIImage(systemName: "bookmark.fill", withConfiguration: configuration)
+            sender.setImage(filledBookmarkImage, for: .normal)
+        }
+    }
+    
+    
     
     
     override func viewDidLoad() {
@@ -47,9 +72,11 @@ class FactViewController: UIViewController {
             fetchFacts()
         }
         else{
-            let randomFact = facts.randomElement()
-            factLabel.text = randomFact?.fact
+            factLabel.text = facts.removeFirst().fact
         }
+        let configuration = UIImage.SymbolConfiguration(scale: .large)
+        let unfilledBookmarkImage = UIImage(systemName: "bookmark", withConfiguration: configuration)
+        addToFavorites.setImage(unfilledBookmarkImage, for: .normal)
     }
     
     @objc func factLabelTapped() {

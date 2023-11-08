@@ -3,8 +3,34 @@ import UIKit
 
 class QuoteViewController: UIViewController {
     
+    @IBOutlet weak var addToFavoritesButton: UIButton!
     @IBOutlet weak var quotesLabel: UILabel!
+    
+    @IBAction func addToFavorited(_ sender: UIButton) {
+        let currentQuote = quotesLabel.text ?? ""
+        let isFavorite = favoritesManager.isFavorite(currentQuote)
+           
+        if isFavorite {
+            favoritesManager.removeFavorite(currentQuote)
+            sender.isSelected = false
+            
+            let configuration = UIImage.SymbolConfiguration(scale: .large)
+            let unfilledBookmarkImage = UIImage(systemName: "bookmark", withConfiguration: configuration)
+            sender.setImage(unfilledBookmarkImage, for: .normal)
+        } else {
+            favoritesManager.addFavorite(currentQuote)
+            sender.isSelected = true
+            
+            let configuration = UIImage.SymbolConfiguration(scale: .large)
+            let filledBookmarkImage = UIImage(systemName: "bookmark.fill", withConfiguration: configuration)
+            sender.setImage(filledBookmarkImage, for: .normal)
+        }
+    }
+    
+    var favoritesManager = FavoritesManager()
     var quotes: [Quote] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchQuotes()
@@ -53,11 +79,18 @@ class QuoteViewController: UIViewController {
         if quotes.isEmpty{
             fetchQuotes()
         }
-        else{
+        else {
             let randomQuote = quotes.randomElement()
             quotesLabel.text = "\"\(randomQuote?.content ?? "")\"\n- \(randomQuote?.author ?? "")"
-        }
+            }
+        
+        addToFavoritesButton.isSelected = false
+
+        let configuration = UIImage.SymbolConfiguration(scale: .large)
+        let unfilledBookmarkImage = UIImage(systemName: "bookmark", withConfiguration: configuration)
+        addToFavoritesButton.setImage(unfilledBookmarkImage, for: .normal)
     }
+    
     @objc func quotesLabelTapped() {
 
            updateQuotesLabel()

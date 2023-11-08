@@ -22,6 +22,7 @@
 		DDBB8D452AF9FF760078302B /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D442AF9FF760078302B /* JokeViewController.swift */; };
 		DDBB8D472AF9FF800078302B /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB8D462AF9FF800078302B /* QuoteViewController.swift */; };
 		DDFA603A2AFB6CF50081653F /* DetailedFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA60392AFB6CF50081653F /* DetailedFavoritesViewController.swift */; };
+		DDFA603C2AFB77170081653F /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA603B2AFB77170081653F /* FavoritesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DDBB8D442AF9FF760078302B /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		DDBB8D462AF9FF800078302B /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		DDFA60392AFB6CF50081653F /* DetailedFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedFavoritesViewController.swift; sourceTree = "<group>"; };
+		DDFA603B2AFB77170081653F /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +78,12 @@
 			children = (
 				DD9854B02AF96803005A3616 /* AppDelegate.swift */,
 				DD9854B22AF96803005A3616 /* SceneDelegate.swift */,
+				DDBB8D462AF9FF800078302B /* QuoteViewController.swift */,
 				DD9854C42AF96897005A3616 /* FactViewController.swift */,
 				DDBB8D442AF9FF760078302B /* JokeViewController.swift */,
-				DDBB8D462AF9FF800078302B /* QuoteViewController.swift */,
 				DDBB8D402AF993880078302B /* FeedData.swift */,
 				DD2D327C2AFB61D8006546CE /* FavoritesTableViewController.swift */,
+				DDFA603B2AFB77170081653F /* FavoritesManager.swift */,
 				DDFA60392AFB6CF50081653F /* DetailedFavoritesViewController.swift */,
 				DD2D32762AFB5BDA006546CE /* FavoritesCell.swift */,
 				DD9854B62AF96803005A3616 /* Main.storyboard */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9854C52AF96897005A3616 /* FactViewController.swift in Sources */,
+				DDFA603C2AFB77170081653F /* FavoritesManager.swift in Sources */,
 				DD2D32772AFB5BDA006546CE /* FavoritesCell.swift in Sources */,
 				DDBB8D472AF9FF800078302B /* QuoteViewController.swift in Sources */,
 				DD2D327D2AFB61D8006546CE /* FavoritesTableViewController.swift in Sources */,

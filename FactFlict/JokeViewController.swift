@@ -4,9 +4,32 @@ import UIKit
 class JokeViewController: UIViewController {
     
     var jokesList:[Joke] = []
+    var favoritesManager = FavoritesManager()
+    @IBOutlet weak var addToFavoritesButton: UIButton!
     
     @IBAction func addToFavorites(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
+        
+        let currentJoke = jokeLabel.text ?? ""
+        let isFavorite = favoritesManager.isFavorite(currentJoke)
+
+            
+            if isFavorite {
+                favoritesManager.removeFavorite(currentJoke)
+                sender.isSelected = false
+                
+                let configuration = UIImage.SymbolConfiguration(scale: .large)
+                let unfilledBookmarkImage = UIImage(systemName: "bookmark", withConfiguration: configuration)
+                sender.setImage(unfilledBookmarkImage, for: .normal)
+            } else {
+                favoritesManager.addFavorite(currentJoke)
+                sender.isSelected = true
+                
+                let configuration = UIImage.SymbolConfiguration(scale: .large)
+                let filledBookmarkImage = UIImage(systemName: "bookmark.fill", withConfiguration: configuration)
+                sender.setImage(filledBookmarkImage, for: .normal)
+            }
+        
+  
     }
     
     @IBOutlet weak var jokeLabel: UILabel!
@@ -64,8 +87,13 @@ class JokeViewController: UIViewController {
         }
         else {
             jokeLabel.text = jokesList.removeFirst().joke
-            
         }
+        
+            addToFavoritesButton.isSelected = false
+
+            let configuration = UIImage.SymbolConfiguration(scale: .large)
+            let unfilledBookmarkImage = UIImage(systemName: "bookmark", withConfiguration: configuration)
+            addToFavoritesButton.setImage(unfilledBookmarkImage, for: .normal)
         }
     
     @objc func jokeLabelTapped() {

@@ -37,16 +37,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxI-MZ-Rs0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxI-MZ-Rs0" userLabel="addToFavorites">
                                 <rect key="frame" x="311" y="86" width="40" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="favoriteButton" label="favoriteButton"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="linkColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="heart" catalog="system">
+                                <state key="normal" image="bookmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                 </state>
+                                <connections>
+                                    <action selector="addToFavorites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1V-9n-0dp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading fact..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p82-qi-eds" userLabel="quoteLabel">
                                 <rect key="frame" x="45" y="211" width="303" height="161"/>
@@ -67,7 +70,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Facts" image="brain.head.profile.fill" catalog="system" id="Yqm-F2-odi"/>
                     <connections>
-                        <outlet property="FavoriteButton" destination="zxI-MZ-Rs0" id="eqe-a3-H4s"/>
+                        <outlet property="addToFavorites" destination="zxI-MZ-Rs0" id="RSX-X9-rEB"/>
                         <outlet property="factLabel" destination="p82-qi-eds" id="C9t-Vn-OzP"/>
                     </connections>
                 </viewController>
@@ -172,7 +175,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="favoriteButton" label="favoriteButton"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="heart" catalog="system">
+                                <state key="normal" image="bookmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                 </state>
                                 <connections>
@@ -198,6 +201,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Jokes" image="face.smiling.fill" catalog="system" id="gY7-BS-Zh6"/>
                     <connections>
+                        <outlet property="addToFavoritesButton" destination="53y-aC-SWf" id="oWi-gR-vBf"/>
                         <outlet property="jokeLabel" destination="oYY-Q4-uJJ" id="KAk-5H-8sX"/>
                     </connections>
                 </viewController>
@@ -218,11 +222,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="favoriteButton" label="favoriteButton"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="linkColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="heart" catalog="system">
+                                <state key="normal" image="bookmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                 </state>
+                                <connections>
+                                    <action selector="addToFavorited:" destination="uNp-W5-CnZ" eventType="touchUpInside" id="cqa-in-MWY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading quote..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRd-k9-hSy">
                                 <rect key="frame" x="45" y="211" width="303" height="161"/>
@@ -243,6 +250,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Quotes" image="rectangle.3.group.bubble" catalog="system" id="uQq-iV-PEf"/>
                     <connections>
+                        <outlet property="addToFavoritesButton" destination="g7v-ML-ELN" id="hKO-Od-BDB"/>
                         <outlet property="quotesLabel" destination="CRd-k9-hSy" id="PzL-zy-Nak"/>
                     </connections>
                 </viewController>
@@ -252,11 +260,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="brain.head.profile.fill" catalog="system" width="120" height="128"/>
         <image name="face.smiling.fill" catalog="system" width="128" height="123"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="rectangle.3.group.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

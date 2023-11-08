@@ -46,17 +46,17 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 ### 2. Screen Archetypes
 
-- [ ] Random Fact Screen
-* A random fact is automatically generated upon opening the app
-* User is able to swipe up to generate a new random fact
+- [x] Random Fact Screen
+* A random fact is automatically generated upon opening the view
+* User is able to tap to generate a new random fact
 * A favorite button is shown on the screen to bookmark
-- [ ] Random Quote Screen
-* A random quote is automatically generated upon opening the app
-* User is able to swipe up to generate a new random quote
+- [X] Random Quote Screen
+* A random quote is automatically generated upon opening the view
+* User is able to tap to generate a new random quote
 * A favorite button is shown on the screen to bookmark
-- [ ] Random Joke Screen
-* A random joke is automatically generated upon opening the app
-* User is able to swipe up to generate a new random joke
+- [X] Random Joke Screen
+* A random joke is automatically generated upon opening the view
+* User is able to tap to generate a new random joke
 * A favorite button is shown on the screen to bookmark
 
 ### 3. Navigation
@@ -70,7 +70,7 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
 
 **Flow Navigation** (Screen to Screen)
 
-- None
+- Tapping on a favorited quote in "Favorites" screen displays a detailed screen on the full quote
 
 ## Wireframes
 ![Wireframe](wireframe.jpeg)
@@ -107,3 +107,22 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
     </a>
   </div>
 
+### Progress For Week 9
+
+- Added display of quote/joke/fact when app/view starts via API requests
+- User can tap on a text to display the next text
+- User is able to save a text to favorites
+- Favorited text persists through app restarts
+- Ability to delete text from favorites screen
+- Added app icon
+
+
+### Week 9 demo vide
+
+<div>
+    <a href="https://www.loom.com/share/5af16d1fc62749c184a145343a7291bd">
+    </a>
+    <a href="https://www.loom.com/share/5af16d1fc62749c184a145343a7291bd">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5af16d1fc62749c184a145343a7291bd-with-play.gif">
+    </a>
+  </div>

@@ -19,3 +19,7 @@ struct Fact: Codable {
     let fact: String
 }
 
+
+struct FavoritedQuote {
+    let text: String
+}
