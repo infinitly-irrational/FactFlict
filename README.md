@@ -126,3 +126,19 @@ An app that contains 3 main pages, a random quote, joke, or fact generator using
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/a3162e2384ed4f708da4f1eecb664630-with-play.gif">
     </a>
   </div>
+
+### Progress for Week 10
+
+- Implement a tap to copy feature in the detailed favorited quote view
+- Main app features completed early in week 9
+
+### Week 10 demo video
+
+<div>
+    <a href="https://www.loom.com/share/b42ce236f45b490e8ec029debfdf7052">
+    </a>
+    <a href="https://www.loom.com/share/b42ce236f45b490e8ec029debfdf7052">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b42ce236f45b490e8ec029debfdf7052-with-play.gif">
+    </a>
+  </div>
+
